@@ -79,3 +79,20 @@ DerivedDataCache/*
 # Blender unnecessary files
 *.blend1
 Export/*
+
+# Mac
+*.DS_Store
+
+# Xcode
+*.xcworkspace
+
+# Windows
+*.sln
+*.vs
+*.vsconfig
+
+# Git
+hooks
+lfs
+
+*.zip
