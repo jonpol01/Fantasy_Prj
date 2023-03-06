@@ -2,7 +2,7 @@
 
 using UnrealBuildTool;
 using System.Collections.Generic;
-
+ 
 public class f_prjEditorTarget : TargetRules
 {
 	public f_prjEditorTarget( TargetInfo Target) : base(Target)
@@ -11,5 +11,8 @@ public class f_prjEditorTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
 		ExtraModuleNames.Add("f_prj");
+  
+        bOverrideBuildEnvironment = true;
+        AdditionalCompilerArguments = "-Wunused-but-set-variable";
 	}
 }
